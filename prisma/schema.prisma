@@ -61,10 +61,10 @@ model VerificationToken{
   @@unique([identifier, token])
 }
 
-model movie{
+model Movie{
   id String @id @default(auto()) @map("_id") @db.ObjectId
   title String
-  descrpition String
+  description String
   videoUrl String
   thumbnailUrl String
   genre String
